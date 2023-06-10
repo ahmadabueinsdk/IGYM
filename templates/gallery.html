@@ -5,30 +5,32 @@ Gallery
 {% block body %}
 
 <div class="container mt-2">
-<Center><h1>Gallery</h1></Center>
-<div class="row">
+  <Center>
+    <h1>Gallery</h1>
+  </Center>
+  <div class="row">
 
 
-{% for post in posts  %}  
-<div class="col-md-4">
+    {% for post in posts %}
+    <div class="col-md-4">
 
 
-    <div class="card">
+      <div class="card">
         <img src="{{post.img.url}}" class="card-img-top" alt="...">
         <div class="card-body">
           <h5 class="card-title">{{post.title}}</h5>
-          <p class="card-text">Uploaded On : {{post.timeStamp}} </p>
+          <p class="card-text">Uploaded On : {{post.timestamp}} </p>
         </div>
       </div>
 
 
-</div>
-{% endfor %}
-<br>
-<br>
+    </div>
+    {% endfor %}
+    <br>
+    <br>
 
 
-</div>
+  </div>
 </div>
 
 
